@@ -42,8 +42,13 @@ function Popular() {
             pagination: false,
             arrows: false,
             drag: 'free',
-            gap: '3rem'
-          }}>
+            gap: '3rem',
+            breakpoints: {
+              600: {
+                perPage: 1,
+                gap: '1rem',
+              }
+            }}}>
            {popular.map((recipe) => {
              return (
               <SplideSlide key={recipe.id}>
@@ -58,7 +63,7 @@ function Popular() {
              );
             })}
           </Splide>
-
+             <h4 style={{ textAlign: "center", marginTop: "5px"  }}>Swipe Right </h4>
          </Wrapper>
       </div>
   )

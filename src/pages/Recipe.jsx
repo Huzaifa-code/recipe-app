@@ -56,6 +56,10 @@ const DetailWrapper = styled.div`
   margin-bottom: 5rem;
   display: flex;
 
+  @media only screen and (max-width: 600px){
+    flex-direction: column;
+  }
+
   .active{
     background: linear-gradient( 35deg, #494949, #313131);
     color: #fff;
@@ -67,6 +71,10 @@ const DetailWrapper = styled.div`
   li {
     font-size: 1.2rem;
     line-height: 2.5rem;
+
+    @media only screen and (max-width: 600px){
+      font-size: 1rem;
+    }
   }
   ul{
     margin-top: 2rem;
@@ -88,8 +96,16 @@ const Button = styled.button`
 const Info = styled.div`
   margin-left: 5rem;
 
+  @media only screen and (max-width: 600px){
+    margin-left: 0;
+  }
+
   h3{
     font-size: 1.3rem;
+
+    @media only screen and (max-width: 600px){
+      font-size: 1rem;
+    }
   }
 
 `;

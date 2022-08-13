@@ -26,6 +26,11 @@ function Search() {
 
 const FormStyle = styled.form`
   margin: 0 6rem;
+
+  @media only screen and (max-width: 600px){
+    margin: 0 0;
+  }
+
   div{
     position: relative;
     width: 100%;
